@@ -1,2 +1,3 @@
-# mint
-Huxley Flavor Example - ELK Stack
+# Huxley Flavor Example - Vanilla
+Elasticsearch + Kibana Huxley Example
+
