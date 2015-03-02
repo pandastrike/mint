@@ -1,0 +1,31 @@
+{
+  "name": "mint",
+  "version": "1.0.0",
+  "description": "Huxley flavor example showcasing Elasticsearch and Kibana",
+  "main": "mint.coffee",
+  "dependencies": {
+    "connect": "^3.3.4",
+    "harp": "^0.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandastrike/mint.git"
+  },
+  "keywords": [
+    "huxley",
+    "coreos",
+    "cluster",
+    "elasticsearch",
+    "kibana"
+  ],
+  "author": "David Harper (david@pandastrike.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandastrike/mint/issues"
+  },
+  "homepage": "https://github.com/pandastrike/mint"
+}
