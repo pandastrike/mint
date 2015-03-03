@@ -27,7 +27,7 @@ harp = require "harp"
 #====================
 app = connect()
 app.use harp.mount(__dirname + "/../public")
-http.createServer(app).listen(3000, () ->
+http.createServer(app).listen(80, () ->
    console.log "\nMint is online."
 )
 
