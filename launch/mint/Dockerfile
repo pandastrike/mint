@@ -1,4 +1,4 @@
-FROM base/archlinux
+FROM pandastrike/arch_plus
 MAINTAINER David Harper (david@pandastrike.com)
 #===============================================================================
 # Mint Example - Dockerfile
