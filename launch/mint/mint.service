@@ -41,7 +41,7 @@ ExecStartPre=/usr/bin/docker build --tag="mint_image" /home/core/launch/mint/lau
 # Launch the container.
 ExecStart=/usr/bin/docker run --name mint -p 3020:80 \
 mint_image /bin/bash -c \
-'cd mint && coffee mint.coffee'
+'cd mint && npm start'
 
 [Install]
 WantedBy=multi-user.target
