@@ -3,7 +3,7 @@
 #===============================================================================
 
 [Unit]
-Description=Spin Up Service
+Description=Spin Up Kibana
 # List any services that must be online before or wait untl after this service is activated.
 Before=mint.service
 After=docker.service elasticsearch.service

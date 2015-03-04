@@ -4,7 +4,7 @@
 # This unit spins up a CoreOS service.
 
 [Unit]
-Description=Spin Up Service
+Description=Spin Up Elasticsearch
 # List any services that must be online before or wait untl after this service is activated.
 Before=kibana.service mint.service
 After=docker.service
