@@ -40,7 +40,7 @@ ExecStartPre=/usr/bin/docker pull pandastrike/pc_kibana
 ExecStart=/usr/bin/docker run --name mint-kibana -p 3021:5601 \
   pandastrike/pc_kibana /bin/bash -c \
   'cd /kibana-4.0.0-beta3/config &&\
-  sed "s/localhost:9200/mint-es.flavor.cluster/g" < kibana.yml > temp && \
+  sed "s/localhost:9200/mint-es.flavor.cluster:2020/g" < kibana.yml > temp && \
   mv temp kibana.yml && \
   cd /kibana-4.0.0-beta3/bin && ./kibana'
 
