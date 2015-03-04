@@ -17,4 +17,4 @@ RUN npm install -g coffee-script
 RUN git clone git://hook.flavor.cluster:2001/repos/mint.git mint
 
 # Install local repository dependencies.
-RUN cd mint && git pull && npm install
+RUN cd mint && npm install
