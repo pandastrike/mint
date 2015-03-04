@@ -42,6 +42,8 @@ ExecStart=/usr/bin/docker run --name mint-es -p 2020:9200 \
   pandastrike/pc_elasticsearch /bin/bash -c \
   'cd elasticsearch-1.4.2/bin && ./elasticsearch'
 
+# Create an index for us to play with
+ExecStartPost=/usr/bin/curl -XPOST localhost:2020/demo
 
 [Install]
 WantedBy=multi-user.target
