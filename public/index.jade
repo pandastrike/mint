@@ -1,1 +1,29 @@
-h1 Hello World!
+doctype html
+
+head
+  script(src="//code.jquery.com/jquery-1.11.2.min.js")
+
+body
+
+  h1 Panda Cluster ELK Demo
+
+  h2 Add something to the index
+
+  form
+    input(type="text" name="content")
+    input(type="submit" value="Add to index")
+
+  p#response
+
+  script.
+    $(function() {
+      $('form').submit(function(evt) {
+        evt.preventDefault()
+
+        $.post('/', $(this).serialize()).done(function(response) {
+          console.log(response)
+          $('#response').html(response)
+        })
+      })
+    })
+
