@@ -8,11 +8,10 @@ MAINTAINER David Harper (david@pandastrike.com)
 
 RUN pacman -Syu --noconfirm
 RUN pacman-db-upgrade
-RUN pacman -S --noconfirm jre7-openjdk-headless wget vim tmux git nodejs
+RUN pacman -S --noconfirm git nodejs
 
 # Install Node dependencies that must be global.
 RUN npm install -g coffee-script
-RUN npm install -g harp
 
 # Install the Mint repository.
 RUN git clone git://hook.flavor.cluster:2001/repos/mint.git mint
