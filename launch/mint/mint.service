@@ -39,7 +39,7 @@ ExecStartPre=/usr/bin/bash -c "/usr/bin/git clone git://hook.flavor.cluster:2001
 ExecStartPre=/usr/bin/docker build --tag="mint_image" /home/core/launch/mint/launch/mint/.
 
 # Launch the container.
-ExecStart=/usr/bin/docker run --name mint -p 3020:80 \
+ExecStart=/usr/bin/docker run --name mint -p 3020:8080 \
 mint_image /bin/bash -c \
 'cd mint && npm start'
 
